@@ -17,11 +17,11 @@ html {
 }
 
 body {
-  font-family: 'Kumbh Sans', sans-serif;
   background-color: var(--dark-cyan);
-  background-image: url(../card/images/bg-pattern-top.svg), url(../card/images/bg-pattern-bottom.svg);
+  background-image: url("images/bg-pattern-top.svg"), url("images/bg-pattern-bottom.svg");
   background-repeat: no-repeat, no-repeat;
   background-position: right 50vw bottom 50vh, left 50vw top 50vh;
+  font-family: 'Kumbh Sans', sans-serif;
 }
 
 .flex {
@@ -38,7 +38,7 @@ body {
 }
 
 .card {
-  background-color: #fff;
+  background-color: white;
   width: 326px;
   border-radius: 16px;
   overflow: hidden;
@@ -62,26 +62,28 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border-bottom: 1px solid var(--dark-gray);
+  border-bottom: 1px solid rgba(153, 153, 153, 0.452);
 }
 
 .card-body-img {
-  border: 5px solid #fff;
+  border: 5px solid white;
   border-radius: 50%;
   margin-top: calc(-48px - 5px);
-  background-color: #fff;
+  background-color: white;
 }
 
 .card-body-title {
+  margin-top: 2rem;
   font-size: 1.8rem;
 }
 
 .card-body-title span {
   color: var(--dark-gray);
   font-weight: 400;
+  margin-left: 0.7rem;
 }
 
-.card-body-location {
+.card-body-text {
   color: var(--dark-gray);
   font-size: 1.6rem;
   margin-bottom: 2rem;
@@ -92,17 +94,19 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 .card-footer-social {
   text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 .card-footer-social p {
+  color: var(--dark-gray);
   letter-spacing: 1px;
 }
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=estilos.css.map */
